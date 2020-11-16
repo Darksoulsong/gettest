@@ -22,7 +22,9 @@ class HomePage extends StatelessWidget {
               children: [
                 Center(
                   child: FlatButton(
-                      onPressed: () => Get.toNamed('/details'),
+                      onPressed: () => Get.toNamed(
+                            '/details?type=foo',
+                          ),
                       child: Text('Go to details')),
                 )
               ],
